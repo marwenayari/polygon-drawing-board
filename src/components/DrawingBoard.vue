@@ -53,7 +53,7 @@ export default {
       // add point to scene
       this.scene.add( circle );
 
-      console.log("points : " +  this.points);
+      //console.log("points : " +  this.points);
 
       //save first point
       if (this.points.length == 2) {
@@ -61,7 +61,7 @@ export default {
       this.firstPoint.push(circle.position.y);
       }
 
-    console.log("firstPoint : "+ this.firstPoint);
+      //console.log("firstPoint : "+ this.firstPoint);
     
       if (this.points.length > 2) {
       var geometry2 = new THREE.Geometry();
@@ -79,7 +79,7 @@ export default {
           this.firstPoint = [];
           this.index = 2;
           this.polygonColor = Math.random() * 0x42b983 + 0x42b983;
-          console.log("Points : " + this.points);
+          //console.log("Points : " + this.points);
       }
 
     }
